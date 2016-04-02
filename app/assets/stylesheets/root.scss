@@ -1,0 +1,85 @@
+@import "bootstrap-sprockets";
+@import 'bootstrap';
+/*  Body jumbotron  */
+.center
+{
+  text-align: center;
+  margin: 5%;padding: 5%;
+  h1 {
+    margin: 2%;
+  }
+}
+
+.jumbotron
+{
+  background-color: darkred;
+  margin: 5%;
+  h1 {
+    color: white;
+  }
+  h2{
+    color: white;
+  }
+  .btn{
+    background-color: black;
+    border-color: black;
+  }
+  p{
+    color: #ffffff;
+  }
+}
+
+
+
+/*  Top left logo */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.0em;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: darkred;
+  text-decoration: none;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+.alert {
+  margin-top: 8%;
+}
