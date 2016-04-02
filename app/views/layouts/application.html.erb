@@ -17,6 +17,7 @@
           <li><%= link_to "FAQ",   faq_path %></li>
           <li><%= link_to "Rules", rules_path %></li>
           <li><a href="https://getinvolved.ggc.edu/organization/googlegrizzlies" target="blank">Google Grizzlies</a></li>
+          <li><a><div class="g-plus" data-action="share" data-href="https://ggchack.herokuapp.com/"></div></a></li>
         </ul>
       </nav>
     </div>
@@ -28,6 +29,8 @@
     <br>
     <br>
     <br>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <%= yield %>
   </div>
 </body>
