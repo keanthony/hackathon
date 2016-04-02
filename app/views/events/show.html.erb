@@ -24,7 +24,31 @@
   <strong>Location:</strong>
   <%= @event.location %>
 </p>
+<br>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Major</th>
+      <th>Concentration</th>
+      <th>9000 Number</th>
+    </tr>
+  </thead>
 
-<%= link_to 'Register', register_path(@event) %> |
+  <tbody>
+    <% @event.participants.each do |participant| %>
+      <tr>
+        <td><%= participant.name %></td>
+        <td><%= participant.email %></td>
+        <td><%= participant.major %></td>
+        <td><%= participant.concentration %></td>
+        <td><%= participant.id_number %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Register', {:controller => "participants", :action => "new", :event_id => @event.id } %> |
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>

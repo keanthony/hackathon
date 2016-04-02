@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root  'root#index'
   get   'faq'   => 'root#faq'
   get   'rules' => 'root#rules'
-  get   'register' => 'events#register'
+  resources :participants
 end

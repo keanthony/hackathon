@@ -15,4 +15,12 @@
     <%= f.label :concentration %><br>
     <%= f.text_field :concentration %>
   </div>
+  <div class="field">
+    9000 <%= f.label :id_number %><br>
+    <%= f.text_field :id_number %>
+  </div>
+  <%= hidden_field_tag(:subaction, @event.id) %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
 <% end %>
